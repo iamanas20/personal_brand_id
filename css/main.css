@@ -18,12 +18,12 @@ body {
   width: 100%;
   height: 50px;
   display: flex;
-  text-align: right;
+  text-align: center;
   padding: 40px 0;
 }
 .hero-section .nav-bar .nav-links {
   vertical-align: middle;
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 .hero-section .nav-bar .nav-links::after {
@@ -34,13 +34,47 @@ body {
 .hero-section .nav-bar .nav-links .link {
   float: left;
   width: 25%;
+  height: 40px;
+  position: relative;
+}
+.hero-section .nav-bar .nav-links .link .active-border {
+  display: none;
+  margin: auto;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background: #f59aa9;
+}
+.hero-section .nav-bar .nav-links .link .active-nav-link + .active-border {
+  display: block;
+  animation: 170ms appear 1;
 }
 .hero-section .nav-bar .nav-links .link a {
   text-decoration: none;
   color: black;
-  font: 500 18px "Lato", sans-serif;
+  font: 500 16px "Lato", sans-serif;
+  position: relative;
+}
+.hero-section .nav-bar .nav-links .link a .hover-effect {
+  display: none;
+  position: absolute;
+  height: 10px;
+  width: 80%;
+  background: #ffbec9;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+.hero-section .nav-bar .nav-links .link a:hover .hover-effect {
+  animation: 170ms appear 1;
+  display: block;
 }
 .hero-section .nav-bar .social-media {
+  position: absolute;
+  right: 0;
   vertical-align: middle;
   margin: auto 0;
 }
@@ -56,21 +90,22 @@ body {
   padding-left: 20px;
 }
 .hero-section .nav-bar .social-media .social-media-link img {
-  height: 25px;
+  height: 20px;
 }
 
-@keyframes scroll {
+.content-section .section {
+  display: none;
+}
+.content-section .show-section {
+  display: block;
+}
+
+@keyframes appear {
   0% {
-    bottom: 25px;
-  }
-  25% {
-    bottom: 10px;
-  }
-  30% {
-    bottom: 10px;
+    width: 0%;
   }
   100% {
-    bottom: 25px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 900px) {
