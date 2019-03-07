@@ -7,12 +7,12 @@ body{
     margin: 0;
 }
 
-.section-wrapper{
-    max-width: 1300px;
-    padding: 0 40px;
-    margin: auto;
-    position: relative;
-}
+// .section-wrapper{
+//     max-width: 1300px;
+//     padding: 0 40px;
+//     margin: auto;
+//     position: relative;
+// }
 
 .hero-section{
     .nav-bar{
@@ -85,7 +85,7 @@ body{
         
         .social-media{
             position: absolute;
-            right: 0;
+            right: 40px;
             vertical-align: middle;
             margin: auto 0;
             
@@ -167,7 +167,6 @@ body{
     // }
 }
 
-
 .content-section{
     .section{
         display: none;
@@ -175,6 +174,38 @@ body{
 
     .show-section{
         display: block;
+    }
+
+    .home-section{
+        width: 100%;
+        padding: 0 30px;
+        
+        .hero-stripe-container{
+            height: 80vh;
+            background: #d6edf8;
+            position: relative;
+            
+            .logo-container{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -30px;
+                background: rgb(245, 154, 169);
+                width: 60px;
+                height: 80px;
+            }
+            
+            .easter-egg-container{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -30px;
+                background: rgb(245, 154, 169);
+                width: 60px;
+                height: 80px;
+            }
+
+        }
     }
 }
 
