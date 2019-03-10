@@ -1,5 +1,7 @@
 
 $accent: #5965a5;
+$font-1: "Nunito", sans-serif;
+$font-2: "Roboto", sans-serif;
 
 
 *{
@@ -177,13 +179,47 @@ body{
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: white;
-                font: 400 48px/1.4 "Source Pro", sans-serif;
+                font: 500 48px/1.4 $font-1;
                 text-align: center;
             }
         }
     }
-}
 
+    .overview-section{
+        width: 100%;
+        padding: 170px 0;
+
+        .image-container{
+            width: 40%;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            img{
+                width: 100%;
+                margin: auto;
+                max-width: 500px;
+            }
+        }
+        
+        .text-container{
+            width: 59%;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 50px;
+            
+            .title{
+                font: 500 28px $font-1;
+                margin-bottom: 20px;
+            }
+            
+            .text{
+                font: 400 17px/1.7 $font-2;
+                color: #444444;
+                max-width: 700px;
+            }
+        }
+    }
+}
 
 @keyframes appear {
     0%{
@@ -261,6 +297,43 @@ body{
     }
 }
 
+@media screen and (max-width: 950px) {
+    .content-section{
+        .overview-section{
+            text-align: center;
+            padding: 170px 0;
+    
+            .image-container{
+                width: 100%;
+                text-align: center;
+                img{
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+            
+            .text-container{
+                width: 100%;
+                padding-left: unset;
+                padding-top: 70px;
+                text-align: center;
+                margin: auto;
+    
+                .title{
+                    font: 500 28px $font-1;
+                    margin-bottom: 20px;
+                }
+                
+                .text{
+                    font: 400 17px/1.7 $font-2;
+                    color: #444444;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}
 
 @media screen and (max-width: 700px) {
       .content-section{
@@ -269,6 +342,22 @@ body{
                   .hero-text{
                     font-size: 28px;
                     width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .content-section{
+        .overview-section{
+            .image-container{
+                width: 100%;
+                text-align: center;
+                img{
+                    width: 100%;
+                    margin: auto;
                 }
             }
         }

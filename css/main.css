@@ -144,8 +144,38 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font: 400 48px/1.4 "Source Pro", sans-serif;
+  font: 500 48px/1.4 "Nunito", sans-serif;
   text-align: center;
+}
+.content-section .overview-section {
+  width: 100%;
+  padding: 170px 0;
+}
+.content-section .overview-section .image-container {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.content-section .overview-section .image-container img {
+  width: 100%;
+  margin: auto;
+  max-width: 500px;
+}
+.content-section .overview-section .text-container {
+  width: 59%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 50px;
+}
+.content-section .overview-section .text-container .title {
+  font: 500 28px "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+.content-section .overview-section .text-container .text {
+  font: 400 17px/1.7 "Roboto", sans-serif;
+  color: #444444;
+  max-width: 700px;
 }
 
 @keyframes appear {
@@ -196,10 +226,50 @@ body {
     font-size: 4vw;
   }
 }
+@media screen and (max-width: 950px) {
+  .content-section .overview-section {
+    text-align: center;
+    padding: 170px 0;
+  }
+  .content-section .overview-section .image-container {
+    width: 100%;
+    text-align: center;
+  }
+  .content-section .overview-section .image-container img {
+    width: 60%;
+    margin: auto;
+  }
+  .content-section .overview-section .text-container {
+    width: 100%;
+    padding-left: unset;
+    padding-top: 70px;
+    text-align: center;
+    margin: auto;
+  }
+  .content-section .overview-section .text-container .title {
+    font: 500 28px "Nunito", sans-serif;
+    margin-bottom: 20px;
+  }
+  .content-section .overview-section .text-container .text {
+    font: 400 17px/1.7 "Roboto", sans-serif;
+    color: #444444;
+    margin: auto;
+  }
+}
 @media screen and (max-width: 700px) {
   .content-section .home-section .hero-stripe-container .hero-text {
     font-size: 28px;
     width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .content-section .overview-section .image-container {
+    width: 100%;
+    text-align: center;
+  }
+  .content-section .overview-section .image-container img {
+    width: 100%;
+    margin: auto;
   }
 }
 
