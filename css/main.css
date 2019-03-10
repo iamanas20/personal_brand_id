@@ -109,6 +109,7 @@ body {
   background: #f59aa9;
   width: 60px;
   height: 80px;
+  cursor: pointer;
 }
 .content-section .home-section .hero-stripe-container .easter-egg-container {
   position: absolute;
@@ -118,6 +119,13 @@ body {
   background: #f59aa9;
   width: 60px;
   height: 80px;
+  cursor: pointer;
+}
+.content-section .home-section .hero-stripe-container .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 @keyframes appear {

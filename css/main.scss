@@ -193,6 +193,7 @@ body{
                 background: rgb(245, 154, 169);
                 width: 60px;
                 height: 80px;
+                cursor: pointer;
             }
             
             .easter-egg-container{
@@ -203,8 +204,15 @@ body{
                 background: rgb(245, 154, 169);
                 width: 60px;
                 height: 80px;
+                cursor: pointer;
             }
 
+            .hero-text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+            }
         }
     }
 }
