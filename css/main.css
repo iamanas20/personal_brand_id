@@ -39,7 +39,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
-  background: #f59aa9;
+  background: #5965a5;
 }
 .hero-section .nav-bar .nav-links .link .active-nav-link + .active-border {
   display: block;
@@ -56,13 +56,13 @@ body {
   position: absolute;
   height: 10px;
   width: 80%;
-  background: #ffbec9;
+  background: #a5b2ff;
   z-index: -1;
   left: 0;
   bottom: 0;
 }
 .hero-section .nav-bar .nav-links .link a:hover .hover-effect {
-  animation: 170ms appear 1;
+  animation: 200ms appear 1;
   display: block;
 }
 .hero-section .nav-bar .social-media {
@@ -95,10 +95,11 @@ body {
 .content-section .home-section {
   width: 100%;
   padding: 0 30px;
+  padding-bottom: 30px;
 }
 .content-section .home-section .hero-stripe-container {
   height: 80vh;
-  background: #d6edf8;
+  background-image: linear-gradient(to right, #84adff, #9058ff);
   position: relative;
 }
 .content-section .home-section .hero-stripe-container .logo-container {
@@ -106,26 +107,45 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: -30px;
-  background: #f59aa9;
+  background: #5965a5;
   width: 60px;
   height: 80px;
   cursor: pointer;
+  display: block;
+}
+.content-section .home-section .hero-stripe-container .logo-container img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .content-section .home-section .hero-stripe-container .easter-egg-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -30px;
-  background: #f59aa9;
+  background: #5965a5;
   width: 60px;
   height: 80px;
   cursor: pointer;
+  display: block;
+}
+.content-section .home-section .hero-stripe-container .easter-egg-container img {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .content-section .home-section .hero-stripe-container .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font: 400 48px/1.4 "Source Pro", sans-serif;
+  text-align: center;
 }
 
 @keyframes appear {
@@ -136,9 +156,50 @@ body {
     width: 80%;
   }
 }
-@media screen and (max-width: 900px) {
-  .hero-section .hero-content-container .brand-id-content {
-    width: 80%;
+@media screen and (max-width: 1000px) {
+  .content-section .home-section .hero-stripe-container .hero-text {
+    font: 400 42px/1.4 "Source Pro", sans-serif;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-section .nav-bar .social-media {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section .nav-bar {
+    display: none;
+  }
+
+  .content-section .home-section {
+    width: 100%;
+    padding: 30px;
+  }
+  .content-section .home-section .hero-stripe-container {
+    height: calc(100vh - 60px);
+  }
+  .content-section .home-section .hero-stripe-container .logo-container {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+  }
+  .content-section .home-section .hero-stripe-container .easter-egg-container {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    right: unset;
+    top: unset;
+  }
+}
+@media screen and (max-width: 850px) {
+  .content-section .home-section .hero-stripe-container .hero-text {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .content-section .home-section .hero-stripe-container .hero-text {
+    font-size: 28px;
+    width: 90%;
   }
 }
 

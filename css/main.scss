@@ -1,3 +1,7 @@
+
+$accent: #5965a5;
+
+
 *{
     box-sizing: border-box;
 }
@@ -46,7 +50,7 @@ body{
                     left: 50%;
                     transform: translateX(-50%);
                     height: 4px;
-                    background: rgb(245, 154, 169);
+                    background: $accent;
                 }
                 
                 .active-nav-link + .active-border{
@@ -66,7 +70,7 @@ body{
                         position: absolute;
                         height: 10px;
                         width: 80%;
-                        background: rgb(255, 190, 201);
+                        background: #a5b2ff;
                         z-index: -1;
                         left: 0;
                         bottom: 0;
@@ -74,9 +78,8 @@ body{
                     
                     &:hover{
                         .hover-effect{
-                            animation: 170ms appear 1;
+                            animation: 200ms appear 1;
                             display: block;
-                            // opacity: .7;
                         }
                     }
                 }
@@ -106,65 +109,7 @@ body{
                 }
             }
         }
-
     }
-
-
-
-
-
-    // background-image: linear-gradient(rgba(54, 0, 0, 0.5), rgba(73, 20, 20, 0.5)), url("../assets/SandDune.png");
-    // background-repeat: repeat;
-    // background-repeat-x: no-repeat;
-    // background-size: cover;
-    // background-repeat-y: no-repeat;
-    // height: 100vh;
-    // max-height: 720px;
-    // min-height: 667px;
-    
-    // .flex-container{
-    //     padding-top: 100px;
-    //     padding-bottom: 150px;
-    // }
-
-    // .brand-id{
-    //     width: auto;
-    //     text-align: center;
-    //     margin-bottom: 60px;
-    //     img{
-    //         height: 60px;
-    //     }
-    // }
-    
-    // .hero-content-container{
-    //     text-align: center;
-    //     flex-grow: 1;
-    //     color: #ffffff;
-
-    //     .brand-id-text{
-    //         font: 700 18px 'Lato', sans-serif;
-    //         letter-spacing: .7em;
-    //         vertical-align: middle;
-    //         margin-bottom: 100px;
-    //     }
-
-    //     .brand-id-content{
-    //         font: 300 42px 'Nunito', sans-serif;
-    //         width: 60%;
-    //         margin: auto;
-    //     }    
-    // }
-    
-    // .scroll-down-indicator{
-    //     position: absolute;
-    //     bottom: 10px;
-    //     left: 50%;
-    //     animation: 1.3s scroll infinite;
-
-    //     img{    
-    //         height: 30px;
-    //     }
-    // }
 }
 
 .content-section{
@@ -179,21 +124,31 @@ body{
     .home-section{
         width: 100%;
         padding: 0 30px;
-        
+        padding-bottom: 30px;
+
         .hero-stripe-container{
             height: 80vh;
-            background: #d6edf8;
+            background-image: linear-gradient(to right, #84adff, #9058ff);
             position: relative;
-            
+
             .logo-container{
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 left: -30px;
-                background: rgb(245, 154, 169);
+                background: $accent;
                 width: 60px;
                 height: 80px;
                 cursor: pointer;
+                display: block;
+                
+                img{
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
             
             .easter-egg-container{
@@ -201,17 +156,29 @@ body{
                 top: 50%;
                 transform: translateY(-50%);
                 right: -30px;
-                background: rgb(245, 154, 169);
+                background: $accent;
                 width: 60px;
                 height: 80px;
                 cursor: pointer;
+                display: block;
+                
+                img{
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
 
             .hero-text{
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%);
+                transform: translate(-50%, -50%);
+                color: white;
+                font: 400 48px/1.4 "Source Pro", sans-serif;
+                text-align: center;
             }
         }
     }
@@ -225,13 +192,84 @@ body{
     100%{
         width: 80%;
     }
-  }
+}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+    .content-section{
+        .home-section{
+            .hero-stripe-container{
+                .hero-text{
+                    font: 400 42px/1.4 "Source Pro", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
     .hero-section{
-        .hero-content-container{
-            .brand-id-content{
-                width: 80%;
+        .nav-bar{
+            .social-media{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-section{
+        .nav-bar{
+            display: none;
+        }
+    }
+
+    .content-section{
+        .home-section{
+            width: 100%;
+            padding: 30px;
+            
+            .hero-stripe-container{
+                height: calc(100vh - 60px);
+
+                .logo-container{
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -30px;
+                }
+                
+                .easter-egg-container{
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -30px;
+                    right: unset;
+                    top: unset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+      .content-section{
+          .home-section{
+              .hero-stripe-container{
+                  .hero-text{
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+      .content-section{
+          .home-section{
+              .hero-stripe-container{
+                  .hero-text{
+                    font-size: 28px;
+                    width: 90%;
+                }
             }
         }
     }
