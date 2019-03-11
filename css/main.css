@@ -7,6 +7,13 @@ body {
   margin: 0;
 }
 
+.section-wrapper {
+  max-width: 1300px;
+  padding: 0 30px;
+  margin: auto;
+  position: relative;
+}
+
 .hero-section .nav-bar {
   width: 100%;
   height: 50px;
@@ -94,8 +101,8 @@ body {
 }
 .content-section .home-section {
   width: 100%;
-  padding: 0 30px;
   padding-bottom: 30px;
+  padding: 0 30px;
 }
 .content-section .home-section .hero-stripe-container {
   height: 80vh;
@@ -177,6 +184,31 @@ body {
   color: #444444;
   max-width: 700px;
 }
+.content-section .profile-section .profile-stripe-container {
+  width: 100%;
+  padding: 170px 0;
+  background-image: linear-gradient(to right, #84adff, #9058ff);
+}
+.content-section .profile-section .profile-stripe-container .text-container {
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+.content-section .profile-section .profile-stripe-container .text-container .title {
+  font: 500 28px "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+.content-section .profile-section .profile-stripe-container .text-container .text {
+  font: 400 17px/1.7 "Roboto", sans-serif;
+  max-width: 700px;
+  margin: auto;
+}
+.content-section .profile-section .profile-cards-container .card {
+  border-radius: 6px;
+  background: white;
+  background: white;
+}
 
 @keyframes appear {
   0% {
@@ -194,6 +226,10 @@ body {
 @media screen and (max-width: 800px) {
   .hero-section .nav-bar .social-media {
     display: none;
+  }
+
+  .content-section .profile-section .text-container {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {

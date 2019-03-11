@@ -3,7 +3,6 @@ $accent: #5965a5;
 $font-1: "Nunito", sans-serif;
 $font-2: "Roboto", sans-serif;
 
-
 *{
     box-sizing: border-box;
 }
@@ -13,12 +12,12 @@ body{
     margin: 0;
 }
 
-// .section-wrapper{
-//     max-width: 1300px;
-//     padding: 0 40px;
-//     margin: auto;
-//     position: relative;
-// }
+.section-wrapper{
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+    position: relative;
+}
 
 .hero-section{
     .nav-bar{
@@ -125,8 +124,8 @@ body{
 
     .home-section{
         width: 100%;
-        padding: 0 30px;
         padding-bottom: 30px;
+        padding: 0 30px;
 
         .hero-stripe-container{
             height: 80vh;
@@ -188,7 +187,7 @@ body{
     .overview-section{
         width: 100%;
         padding: 170px 0;
-
+        
         .image-container{
             width: 40%;
             display: inline-block;
@@ -216,6 +215,39 @@ body{
                 font: 400 17px/1.7 $font-2;
                 color: #444444;
                 max-width: 700px;
+            }
+        }
+    }
+    
+    .profile-section{
+        .profile-stripe-container{
+            width: 100%;
+            padding: 170px 0;
+            background-image: linear-gradient(to right, #84adff, #9058ff);
+
+            .text-container{
+                text-align: center;
+                color: white;
+                width: 80%;
+                margin: auto;
+                .title{
+                    font: 500 28px $font-1;
+                    margin-bottom: 20px;
+                }
+                
+                .text{
+                    font: 400 17px/1.7 $font-2;
+                    max-width: 700px;
+                    margin: auto;
+                }
+            }
+        }
+
+        .profile-cards-container{
+            .card{
+                border-radius: 6px;
+                background: white;
+                background: white;
             }
         }
     }
@@ -247,6 +279,14 @@ body{
         .nav-bar{
             .social-media{
                 display: none;
+            }
+        }
+    }
+
+    .content-section{
+        .profile-section{
+            .text-container{
+                width: 100%;
             }
         }
     }
