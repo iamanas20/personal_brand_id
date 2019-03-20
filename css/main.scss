@@ -163,10 +163,12 @@ body{
         display: block;
     }
 
+    $heihgt: calc(100vh + 4px);
+
     .home-section{
         width: 100%;
         // overflow: hidden;
-        // min-height: calc(100vh + 4px);
+        min-height: $heihgt;
 
         .hero-stripe-container{
             
