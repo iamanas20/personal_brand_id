@@ -12,333 +12,292 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
-<body onload="onLoad()" >
+<body>
     <div class="hero-section">
         <div class="section-wrapper">
             <div class="nav-bar">
-                <div class="nav-links">
+                <div class="brand-id-container">
+                    <img src="./assets/LogoReadyForC4D small.png" />
+                </div>
+                <div class="link-and-menu">
                     <div class="link">
                         <a class="real-link num-1 active-nav-link" href="#">
                             <div class="hover-effect"></div>
-                            Home
+                            Let's Talk
                         </a>
                         <div class="active-border"></div>
                     </div>
-                    <div class="link">
-                        <a class="real-link num-2" href="#">
-                            <div class="hover-effect"></div>
-                            Work
-                        </a>
-                        <div class="active-border"></div>
-                    </div>
-                    <div class="link">
-                        <a class="real-link num-3" href="#">
-                            <div class="hover-effect"></div>
-                            About
-                        </a>
-                        <div class="active-border"></div>
-                    </div>
-                    <div class="link">
-                        <a class="real-link num-4" href="#">
-                            <div class="hover-effect"></div>
-                            Contact
-                        </a>
-                        <div class="active-border"></div>
+                    <div class="menu-big-container" id="menu-container">
+                        <div class="circle-container">
+                            <div class="menu-container circle">
+                                <div class="menu">
+                                    <div class="menu-line"></div>
+                                    <div class="menu-line-small-container">
+                                        <div class="menu-line-small"></div>
+                                    </div>
+                                    <div class="menu-line"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="social-media">
-                    <div class="social-media-link">
-                        <a target="_blank" href="https://twitter.com/iamanas20">
-                            <img src="https://svgur.com/i/BYr.svg" />
-                        </a>
+            </div>
+        </div>
+        <div class="section home-section show-section">
+            <div class="hero-stripe-container">
+                <div class="section-wrapper">
+                    <div>
+                        
                     </div>
-                    <div class="social-media-link">
-                        <a target="_blank" href="https://instagram.com/iamanas22">
-                            <img src="https://svgur.com/i/BY9.svg" />
-                        </a>    
-                    </div>
-                    <div class="social-media-link">
-                        <a target="_blank" href="https://github.com/iamanas20">
-                            <img src="https://svgur.com/i/BXq.svg" />
-                        </a>
+                    <div class="hero-text-container">
+                        <div class="hero-title">
+                            Hi, I'm Anas Latique
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="content-section">
-        <div class="section home-section show-section">
-            <div class="hero-section-container">
-                <div class="hero-stripe-container">
-                    <div class="logo-container">
-                        <img src="./assets/LogoReadyForC4D small.png" />
-                    </div>
-                    <div class="easter-egg-container">
-                        <img src="./assets/menudah.png" />
-                    </div>
-                    <div class="hero-text">
-                        <div>
-                            Hi, I'm Anas.
-                        </div>
-                        <div>
-                            Designer, Developer
-                        </div>
-                        <div>
-                            And One Cool Dude!
-                        </div>
-                    </div>
+
+    <div class="overview-section">
+        <div class="section-wrapper">
+            <div class="image-container">
+                <img src="https://svgur.com/i/BgC.svg"/>
+            </div>
+            <div class="text-container">
+                <div class="title">
+                    Overview
+                </div>
+                <div class="text">
+                    Since the beginning of my journey as a student developer 
+                    more than 2 years ago, I've been stunned seeing the fast pace 
+                    improvement of the industry, so my take to keep up is I started creating small apps 
+                    and experiences to improve my design and development skills. 
+                    I really love learning new things, meeting and talking to new 
+                    people, I'm perpetually working on improving my chops one 
+                    design/development problem at a time, and I'm one dope as hell 
+                    funny dude!
                 </div>
             </div>
-                <div class="overview-section">
-                    <div class="section-wrapper">
-                        <div class="image-container">
-                            <img src="https://svgur.com/i/BgC.svg"/>
-                        </div>
-                        <div class="text-container">
-                            <div class="title">
-                                Overview
-                            </div>
-                            <div class="text">
-                                Since the beginning of my journey as a student developer 
-                                more than 2 years ago, I've been stunned seeing the fast pace 
-                                improvement of the industry, so my take to keep up is I started creating small apps 
-                                and experiences to improve my design and development skills. 
-                                I really love learning new things, meeting and talking to new 
-                                people, I'm perpetually working on improving my chops one 
-                                design/development problem at a time, and I'm one dope as hell 
-                                funny dude!
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <div class="profile-section">
+        <div class="profile-stripe-container">
+            <div class="section-wrapper">
+                <div class="text-container">
+                    <div class="title">
+                        Profile
                     </div>
-                </div>
-            </div>
-            <div class="profile-section">
-                <div class="profile-stripe-container">
-                    <div class="section-wrapper">
-                        <div class="text-container">
-                            <div class="title">
-                                Profile
-                            </div>
-                            <div class="text">
-                                I have more than 20 github repositories, and I 
-                                tackled many technologies and environments over 
-                                the past two years as a developer, right now I'm 
-                                hired as a front end developer at serious venture, 
-                                this is some the stuff I know and work with.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-wrapper">
-                <div class="profile-cards-container">
-                        <div class="card-container">
-                            <div class="card">
-                                <img class="top-icon" src="https://svgur.com/i/BgV.svg"/>
-                                <div class="card-header">
-                                    Designer
-                                </div>
-                                <div class="card-text">
-                                    I value and love clean and beautiful design, thoughtful and unique structures, and dope as hell experience
-                                </div>
-                                <div class="card-subtitle">
-                                    Things I enjoy designing
-                                </div>
-                                <div class="card-special-text">
-                                    UI, UX, Web, Desktop, Mobile, Logos
-                                </div>
-                                <div class="card-subtitle">
-                                    Design tools
-                                </div>
-                                <div class="card-special-text">
-                                    <ul>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Adobe Illustrator</li>
-                                        <li>Adobe XD</li>
-                                        <li>Adobe After Effects</li>
-                                        <li>Cinema 4D</li>
-                                        <li>Windows Ink</li>
-                                        <li>Sketch</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <img class="top-icon" src="https://svgur.com/i/Bg1.svg"/>
-                                <div class="card-header">
-                                    Developer
-                                </div>
-                                <div class="card-text">
-                                    I love to code in many technologies and platforms, I like to bring ideas to life in a beautiful dark IDE!
-                                </div>
-                                <div class="card-subtitle">
-                                    Languages I speak
-                                </div>
-                                <div class="card-special-text">
-                                    C#, Java, Javascript, React, Vue, HTML, Css, Scss, XAML
-                                </div>
-                                <div class="card-subtitle">
-                                    Dev tools
-                                </div>
-                                <div class="card-special-text">
-                                    <ul>
-                                        <li>Visual Studio</li>
-                                        <li>VS Code</li>
-                                        <li>Bitbucket</li>
-                                        <li>Github</li>
-                                        <li>Git</li>
-                                        <li>Terminal</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="recent-work-section">
-                <div class="section-wrapper">
-                    <div class="text-container">
-                        <div class="title">
-                            My Recent Work
-                        </div>
-                        <div class="text">
-                            Some of my recent work, you wanna collab on some? <a href="mailto:anaslatique@gmail.com?Subject=I%20wanna%20see%20some%20of%20your%20work" target="_top">Email me!</a>
-                        </div>
-                    </div>
-                    <div class="work-collection-container">
-                        <div class="work-collection-row">
-                            <div class="work">
-                                <div class="w-1">
-                                    <div class="work-big-title">
-                                        Sayomi Hotel
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            A hotel management website
-                                        </div>
-                                        <div class="work-tools">
-                                            PHP, Laravel, Javascript, HTML, CSS
-                                        </div>
-                                        <a href="https://github.com/iamanas20/SayomiHotel" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="work">
-                                <div class="w-2">
-                                    <div class="work-big-title">
-                                        Keep Up Notes
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            A todos and notes taking app 
-                                        </div>
-                                        <div class="work-tools">
-                                            C#, XAML, JSON, LINQ
-                                        </div>
-                                        <a href="https://github.com/iamanas20/Keep-it-Up" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="work">
-                                <div class="w-3">
-                                    <div class="work-big-title">
-                                        Recipes From The Fridge
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            A recipes from your ingredients app 
-                                        </div>
-                                        <div class="work-tools">
-                                            C#, XAML, JSON, LINQ
-                                        </div>
-                                        <a href="https://github.com/iamanas20/RecipesFromTheFridge" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-collection-row">
-                            <div class="work">
-                                <div class="w-4">
-                                    <div class="work-big-title">
-                                        CuWeather
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            A minimal as hell weather app
-                                        </div>
-                                        <div class="work-tools">
-                                            C#, XAML, JSON, LINQ
-                                        </div>
-                                        <a href="https://github.com/iamanas20/UWP_CuWeather" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="work">
-                                <div class="w-5">
-                                    <div class="work-big-title">
-                                        Car Renting Service
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            A complete car renting management app
-                                        </div>
-                                        <div class="work-tools">
-                                            C#, XAML, JSON, LINQ
-                                        </div>
-                                        <a href="https://github.com/iamanas20/Keep-it-Up" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="work">
-                                <div class="w-6">
-                                    <div class="work-big-title">
-                                        Arizona Travel Agency
-                                    </div>
-                                    <div class="work-text-container">
-                                        <div class="work-title">
-                                            Early design sketch of a travel agency
-                                        </div>
-                                        <div class="work-tools">
-                                            HTML, CSS, Javascript
-                                        </div>
-                                        <a href="https://github.com/iamanas20/ArizonaTravelAgencyDesign" class="work-goto">
-                                            See repo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="see-all-button-container">
-                        <a href="https://github.com/iamanas20" class="see-all-button">
-                            <!-- <img src="https://svgur.com/i/BrM.svg"/> -->
-                            <span>
-                                See All On GitHub
-                            </span>
-                        </a>
+                    <div class="text">
+                        I have more than 20 github repositories, and I 
+                        tackled many technologies and environments over 
+                        the past two years as a developer, right now I'm 
+                        hired as a front end developer at serious venture, 
+                        this is some the stuff I know and work with.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section">
-
+        <div class="section-wrapper">
+        <div class="profile-cards-container">
+                <div class="card-container">
+                    <div class="card">
+                        <img class="top-icon" src="https://svgur.com/i/BgV.svg"/>
+                        <div class="card-header">
+                            Designer
+                        </div>
+                        <div class="card-text">
+                            I value and love clean and beautiful design, thoughtful and unique structures, and dope as hell experience
+                        </div>
+                        <div class="card-subtitle">
+                            Things I enjoy designing
+                        </div>
+                        <div class="card-special-text">
+                            UI, UX, Web, Desktop, Mobile, Logos
+                        </div>
+                        <div class="card-subtitle">
+                            Design tools
+                        </div>
+                        <div class="card-special-text">
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe XD</li>
+                                <li>Adobe After Effects</li>
+                                <li>Cinema 4D</li>
+                                <li>Windows Ink</li>
+                                <li>Sketch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img class="top-icon" src="https://svgur.com/i/Bg1.svg"/>
+                        <div class="card-header">
+                            Developer
+                        </div>
+                        <div class="card-text">
+                            I love to code in many technologies and platforms, I like to bring ideas to life in a beautiful dark IDE!
+                        </div>
+                        <div class="card-subtitle">
+                            Languages I speak
+                        </div>
+                        <div class="card-special-text">
+                            C#, Java, Javascript, React, Vue, HTML, Css, Scss, XAML
+                        </div>
+                        <div class="card-subtitle">
+                            Dev tools
+                        </div>
+                        <div class="card-special-text">
+                            <ul>
+                                <li>Visual Studio</li>
+                                <li>VS Code</li>
+                                <li>Bitbucket</li>
+                                <li>Github</li>
+                                <li>Git</li>
+                                <li>Terminal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section">
-
-        </div>
-        <div class="section">
-
+    </div>
+    <div class="recent-work-section">
+        <div class="section-wrapper">
+            <div class="text-container">
+                <div class="title">
+                    My Recent Work
+                </div>
+                <div class="text">
+                    Some of my recent work, you wanna collab on some? <a href="mailto:anaslatique@gmail.com?Subject=I%20wanna%20see%20some%20of%20your%20work" target="_top">Email me!</a>
+                </div>
+            </div>
+            <div class="work-collection-container">
+                <div class="work-collection-row">
+                    <div class="work">
+                        <div class="w-1">
+                            <div class="work-big-title">
+                                Sayomi Hotel
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    A hotel management website
+                                </div>
+                                <div class="work-tools">
+                                    PHP, Laravel, Javascript, HTML, CSS
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/SayomiHotel" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="w-2">
+                            <div class="work-big-title">
+                                Keep Up Notes
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    A todos and notes taking app 
+                                </div>
+                                <div class="work-tools">
+                                    C#, XAML, JSON, LINQ
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/Keep-it-Up" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="w-3">
+                            <div class="work-big-title">
+                                Recipes From The Fridge
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    A recipes from your ingredients app 
+                                </div>
+                                <div class="work-tools">
+                                    C#, XAML, JSON, LINQ
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/RecipesFromTheFridge" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-collection-row">
+                    <div class="work">
+                        <div class="w-4">
+                            <div class="work-big-title">
+                                CuWeather
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    A minimal as hell weather app
+                                </div>
+                                <div class="work-tools">
+                                    C#, XAML, JSON, LINQ
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/UWP_CuWeather" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="w-5">
+                            <div class="work-big-title">
+                                Car Renting Service
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    A complete car renting management app
+                                </div>
+                                <div class="work-tools">
+                                    C#, XAML, JSON, LINQ
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/Keep-it-Up" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <div class="w-6">
+                            <div class="work-big-title">
+                                Arizona Travel Agency
+                            </div>
+                            <div class="work-text-container">
+                                <div class="work-title">
+                                    Early design sketch of a travel agency
+                                </div>
+                                <div class="work-tools">
+                                    HTML, CSS, Javascript
+                                </div>
+                                <a target="_blank" href="https://github.com/iamanas20/ArizonaTravelAgencyDesign" class="work-goto">
+                                    See repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-all-button-container">
+                <a href="https://github.com/iamanas20" class="see-all-button">
+                    <!-- <img src="https://svgur.com/i/BrM.svg"/> -->
+                    <span>
+                        See All On GitHub
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
     <script src="js/main.js"></script>

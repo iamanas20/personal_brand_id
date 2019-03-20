@@ -23,38 +23,48 @@ body{
 }
 
 .hero-section{
+    background-image: linear-gradient(to right, #84adff, #9058ff);
+    position: relative;
     .nav-bar{
         width: 100%;
         height: 50px;
         display: flex;
+        justify-content: space-between;
         text-align: center;
+        align-items: center;
         padding: 40px 0;
-
-        .nav-links{
-            vertical-align: middle;
-            width: 50%;
-            margin: auto;
-            &::after{
-                content: '';
-                clear: both;
-                display: block;
+        
+        .brand-id-container{
+            width: 30px;
+            margin-top: auto;
+            img{
+                width: 100%;
             }
+        }
+        
+        .link-and-menu{
+            vertical-align: middle;
+            margin-top: auto;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            position: relative;
+
             .link{
-                float: left;
-                width: 25%;
-                height: 40px;
+                height: 30px;
                 position: relative;
+                margin-right: 80px;
                 
                 .active-border{
                     display: none;
                     margin: auto;
-                    width: 80%;
+                    width: 100%;
                     position: absolute;
                     bottom: 0;
                     left: 50%;
                     transform: translateX(-50%);
-                    height: 4px;
-                    background: $accent;
+                    height: 2px;
+                    background: white;
                 }
                 
                 .active-nav-link + .active-border{
@@ -64,20 +74,21 @@ body{
                 
                 a{
                     text-decoration: none;
-                    color: black;
-                    font: 500 16px "Lato", sans-serif;
+                    color: white;
+                    font: 500 17px "Lato", sans-serif;
                     position: relative;
                     
-                    .hover-effect{
-                        display: none;
-                        position: absolute;
-                        height: 10px;
-                        width: 80%;
-                        background: #a5b2ff;
-                        z-index: -1;
-                        left: 0;
-                        bottom: 0;
-                    }
+                    // .hover-effect{
+                    //     display: none;
+                    //     position: absolute;
+                    //     height: 10px;
+                    //     width: 80%;
+                    //     background: #a5b2ff;
+                    //     // z-index: -1;
+                    //     opacity: .3;
+                    //     left: 0;
+                    //     bottom: 0;
+                    // }
                     
                     &:hover{
                         .hover-effect{
@@ -87,35 +98,63 @@ body{
                     }
                 }
             }
-        }
-        
-        .social-media{
-            position: absolute;
-            right: 40px;
-            vertical-align: middle;
-            margin: auto 0;
-            
-            &::after{
-                content: '';
-                clear: both;
-                display: block;
+
+            .menu-big-container{
+                position: absolute;
+                right: 20px;
             }
 
-            .social-media-link{
-                float: left;
-                width: 33.33%;
-                margin: auto;
-                padding-left: 20px;
+            .circle-container{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
-                img{
-                    height: 20px;
+            .menu-container{
+                cursor: pointer;
+                background: white;
+                padding: 5px;
+                height: 40px;
+                width: 40px;
+                position: relative;
+                border-radius: 50%;
+                text-align: right;
+                .menu{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .menu-line{
+                        width: 17px;
+                        height: 1px;
+                        background: black;
+
+                        &:not(:last-child){
+                            margin-bottom: 5px;
+                        }
+                    }
+                    
+                    .menu-line-small-container{
+                        &::after{
+                            content: '';
+                            clear: both;
+                            display: block;
+                        }
+                    }
+
+                    .menu-line-small{
+                        width: 10px;
+                        height: 1px;
+                        background: black;
+                        margin-bottom: 5px;
+                        float: right;
+                    }
                 }
             }
         }
     }
 }
-
-.content-section{
     .section{
         display: none;
     }
@@ -126,61 +165,26 @@ body{
 
     .home-section{
         width: 100%;
-        padding-bottom: 30px;
-        padding: 0 30px;
+        // overflow: hidden;
+        // min-height: calc(100vh + 4px);
 
         .hero-stripe-container{
-            height: 80vh;
-            background-image: linear-gradient(to right, #84adff, #9058ff);
-            position: relative;
-
-            .logo-container{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -30px;
-                background: $accent;
-                width: 60px;
-                height: 80px;
-                cursor: pointer;
-                display: block;
-                
-                img{
-                    width: 50%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
             
-            .easter-egg-container{
+            .hero-text-container{
                 position: absolute;
                 top: 50%;
-                transform: translateY(-50%);
-                right: -30px;
-                background: $accent;
-                width: 60px;
-                height: 80px;
-                cursor: pointer;
-                display: block;
-                
-                img{
-                    width: 50%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+                left: 10%;
+                transform: translate(-10%, -50%);
+                color: white;
+            }
+
+            .hero-title{
+                font: 600 52px/1.4 $font-3;
+                text-align: center;
             }
 
             .hero-text{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                font: 500 48px/1.4 $font-1;
+                font: 600 52px/1.4 $font-3;
                 text-align: center;
             }
         }
@@ -475,7 +479,6 @@ body{
             }
         }
     }
-}
 
 @keyframes appear {
     0%{

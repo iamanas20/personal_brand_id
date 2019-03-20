@@ -1,3 +1,4 @@
+
 function onLoad() {
     var btns = document.getElementsByClassName("real-link");
     var sections = document.getElementsByClassName("section");
@@ -33,7 +34,5 @@ function onLoad() {
             sections[num - 1].className += " show-section";
             
         });
-
-        
     }
 }
