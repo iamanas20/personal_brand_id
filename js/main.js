@@ -36,3 +36,33 @@ function onLoad() {
         });
     }
 }
+
+
+
+var $circle = $('.mouse-follower');
+
+function moveCircle(e) {
+    TweenLite.to($circle, 0.3, {
+        css: {
+            opacity: 1,
+            left: e.pageX - 14,
+            top: e.pageY - 14
+        }
+    });
+}
+
+function disappearCircle(e) {
+    TweenLite.to($circle, 0.3, {
+        css: {
+            opacity: 0,
+        }
+    });
+}
+
+$(window).on('mousemove', moveCircle);
+$(document).on('mouseleave', disappearCircle);
+
+
+var link_stripe = $('active-border');
+
+
