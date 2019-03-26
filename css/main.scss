@@ -152,6 +152,7 @@ body{
             .menu-container{
                 cursor: pointer;
                 padding: 10px;
+                margin-top: -10px;
                 height: 50px;
                 width: 50px;
                 position: relative;
@@ -494,16 +495,16 @@ body{
 
                 }
                 .w-2{
-                    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+                    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
                 }
                 .w-3{
                     background: linear-gradient(to right, #ff7e5f, #feb47b);
                 }
                 .w-4{
-                    background: linear-gradient(to right, #11998e, #38ef7d);
+                    background: linear-gradient(109.6deg, rgb(225, 37, 105) 11.2%, rgb(173, 27, 140) 91.1%);
                 }
                 .w-5{
-                    background: linear-gradient(to left, #403a3e, #be5869);
+                    background: radial-gradient(1168px at 5.7% 13.5%, rgb(188, 0, 36) 0%, rgb(240, 240, 240) 90%);
                 }
                 .w-6{
                     background: linear-gradient(to left, #aa4b6b, #6b6b83, #3b8d99);
@@ -555,6 +556,69 @@ body{
         }
     }
 
+    .recent-design-section{
+        width: 100%;
+        padding: 100px 0;
+
+        .text-container{
+            text-align: center;
+        }
+
+        .title{
+            font: 500 28px $font-1;
+            margin-bottom: 20px;
+        }
+        
+        .text{
+            font: 400 17px/1.7 $font-2;
+            a{
+                text-decoration: none;
+                color: $text-accent;
+            }
+        }
+    }
+    
+    .the-thing-section{
+        width: 100%;
+        padding: 170px 0;
+        background-image: linear-gradient(to right, #84adff, #9058ff);
+
+        .card-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .card{
+                background: white;
+                padding: 30px;
+                box-shadow: 0 1px 5px #0000001a;
+                border-radius: 6px;
+                width: 40%;
+            }
+            
+            .small-title{
+                font: 500 14px $font-1;
+                margin-bottom: 10px;
+            }
+            
+            .titles-stripe{
+                height: 4px;
+                width: 35px;
+                background: $text-accent;
+                margin-bottom: 10px;
+            }
+            
+            .title{
+                font: 500 24px $font-1;
+                margin-bottom: 20px;
+            }
+
+            .text{
+                font: 400 17px/1.7 $font-2;
+            }
+        }
+    }
+
 @keyframes appear {
     0%{
         width: 0%;
@@ -574,12 +638,20 @@ body{
             }
         }
     }
+
+    .the-thing-section{
+        .card-container{
+            .card{
+                width: 50%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
     // .hero-section{
-    //     .nav-bar{
-    //         .social-media{
+        //     .nav-bar{
+            //         .social-media{
     //             display: none;
     //         }
     //     }
@@ -587,15 +659,22 @@ body{
 
     // .content-section{
     //     .profile-section{
-    //         .text-container{
-    //             width: 100%;
-    //         }
-    //     }
+        //         .text-container{
+            //             width: 100%;
+            //         }
+            //     }
     // }
+    .the-thing-section{
+        .card-container{
+            .card{
+                width: 70%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 520px) {
-
+    
     .home-section{
         .hero-stripe-container{
             .hero-title{
@@ -783,6 +862,24 @@ body{
     }
 }
 
+@media screen and (max-width: 580px) {
+    .recent-work-section{
+        .work-collection-container{
+            .work{
+                width: 100%;
+            }
+        }
+    }
+
+    .the-thing-section{
+        .card-container{
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 650px) {
     .content-section{
         .overview-section{
@@ -793,6 +890,14 @@ body{
                     width: 100%;
                     margin: auto;
                 }
+            }
+        }
+    }
+
+    .profile-section{
+        .profile-stripe-container{ 
+            .text-container{
+                width: 100%;
             }
         }
     }

@@ -117,6 +117,7 @@ body {
 .hero-section .nav-bar .link-and-menu .menu-container {
   cursor: pointer;
   padding: 10px;
+  margin-top: -10px;
   height: 50px;
   width: 50px;
   position: relative;
@@ -400,16 +401,16 @@ body {
   background: linear-gradient(to right, #1488cc, #2b32b2);
 }
 .recent-work-section .work-collection-container .w-2 {
-  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 .recent-work-section .work-collection-container .w-3 {
   background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 .recent-work-section .work-collection-container .w-4 {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(109.6deg, #e12569 11.2%, #ad1b8c 91.1%);
 }
 .recent-work-section .work-collection-container .w-5 {
-  background: linear-gradient(to left, #403a3e, #be5869);
+  background: radial-gradient(1168px at 5.7% 13.5%, #bc0024 0%, #f0f0f0 90%);
 }
 .recent-work-section .work-collection-container .w-6 {
   background: linear-gradient(to left, #aa4b6b, #6b6b83, #3b8d99);
@@ -454,6 +455,61 @@ body {
   vertical-align: middle;
 }
 
+.recent-design-section {
+  width: 100%;
+  padding: 100px 0;
+}
+.recent-design-section .text-container {
+  text-align: center;
+}
+.recent-design-section .title {
+  font: 500 28px "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+.recent-design-section .text {
+  font: 400 17px/1.7 "Roboto", sans-serif;
+}
+.recent-design-section .text a {
+  text-decoration: none;
+  color: #9056ff;
+}
+
+.the-thing-section {
+  width: 100%;
+  padding: 170px 0;
+  background-image: linear-gradient(to right, #84adff, #9058ff);
+}
+.the-thing-section .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.the-thing-section .card-container .card {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 1px 5px #0000001a;
+  border-radius: 6px;
+  width: 40%;
+}
+.the-thing-section .card-container .small-title {
+  font: 500 14px "Nunito", sans-serif;
+  margin-bottom: 10px;
+}
+.the-thing-section .card-container .titles-stripe {
+  height: 4px;
+  width: 35px;
+  background: #9056ff;
+  margin-bottom: 10px;
+}
+.the-thing-section .card-container .title {
+  font: 500 24px "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+.the-thing-section .card-container .text {
+  font: 400 17px/1.7 "Roboto", sans-serif;
+}
+
 @keyframes appear {
   0% {
     width: 0%;
@@ -465,6 +521,15 @@ body {
 @media screen and (max-width: 1000px) {
   .content-section .home-section .hero-stripe-container .hero-text {
     font: 400 42px/1.4 "Source Pro", sans-serif;
+  }
+
+  .the-thing-section .card-container .card {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .the-thing-section .card-container .card {
+    width: 70%;
   }
 }
 @media screen and (max-width: 520px) {
@@ -585,6 +650,15 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 580px) {
+  .recent-work-section .work-collection-container .work {
+    width: 100%;
+  }
+
+  .the-thing-section .card-container .card {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 650px) {
   .content-section .overview-section .image-container {
     width: 100%;
@@ -593,6 +667,10 @@ body {
   .content-section .overview-section .image-container img {
     width: 100%;
     margin: auto;
+  }
+
+  .profile-section .profile-stripe-container .text-container {
+    width: 100%;
   }
 }
 
