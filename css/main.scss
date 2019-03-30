@@ -1,5 +1,6 @@
 $accent: #5965a5;
-$text-accent: #9056ff;
+$text-accent: #3625d3;
+$stripe-gradient: linear-gradient(to right, #9057ff, #3e46e4);
 $font-1: "Nunito", sans-serif;
 $font-2: "Roboto", sans-serif;
 $font-3: "Lato", sans-serif;
@@ -579,7 +580,7 @@ body{
         .profile-stripe-container{
             width: 100%;
             padding: 200px 0;
-            background-image: linear-gradient(to right, #84adff, #9058ff);
+            background-image: $stripe-gradient;
 
             .text-container{
                 text-align: center;
@@ -787,10 +788,10 @@ body{
                     background: linear-gradient(109.6deg, rgb(225, 37, 105) 11.2%, rgb(173, 27, 140) 91.1%);
                 }
                 .w-5{
-                    background: radial-gradient(1168px at 5.7% 13.5%, rgb(188, 0, 36) 0%, rgb(240, 240, 240) 90%);
+                    background: linear-gradient(to right, #800080, #ffc0cb);
                 }
                 .w-6{
-                    background: linear-gradient(to left, #aa4b6b, #6b6b83, #3b8d99);
+                    background: linear-gradient(to right, #00f260, #0575e6);
                 }
         }
         
@@ -814,22 +815,32 @@ body{
                 background: $text-accent;
                 color: white;
                 .regular-img{
-                    display: none;
+                    opacity: 0;
                 }
                 .white-img{
-                    display: inline-block;
+                    opacity: 1;
                 }
             }
 
+            > div{
+                display: inline;
+                position: relative;
+                padding-left: 10px;
+                padding-right: 15px;
+            }
+            
             img{
                 height: 20px;
-                margin-left: 8px;
-                display: inline-block;
                 vertical-align: top;
+                transition: 200ms ease-in-out;
+                opacity: 1;
+                position: absolute;
+                top: 0;
             }
-
+            
             .white-img{
-                display: none;
+                transition: 200ms ease-in-out;
+                opacity: 0;
             }
             
             span{
@@ -864,7 +875,7 @@ body{
     .the-thing-section{
         width: 100%;
         padding: 170px 0;
-        background-image: linear-gradient(to right, #84adff, #9058ff);
+        background-image: $stripe-gradient;
 
         .card-container{
             width: 100%;
