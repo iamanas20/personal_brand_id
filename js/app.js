@@ -1,34 +1,22 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 202,
+        "value": 159,
         "density": {
           "enable": true,
-          "value_area": 1025.8919341219544
+          "value_area": 800
         }
       },
       "color": {
-        "value": "#000000"
+        "value": "#b5b5b5"
       },
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 1,
-          "color": "#ffffff"
+          "width": 0,
+          "color": "#000000"
         },
         "polygon": {
           "nb_sides": 5
@@ -40,7 +28,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.1122388442605866,
+        "value": 0.4088700755207083,
         "random": false,
         "anim": {
           "enable": false,
@@ -51,7 +39,7 @@ particlesJS('particles-js',
       },
       "size": {
         "value": 2,
-        "random": true,
+        "random": false,
         "anim": {
           "enable": false,
           "speed": 40,
@@ -61,28 +49,28 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 160.3412060865523,
-        "color": "#282828",
-        "opacity": 0.1763753266952075,
-        "width": 0.4810236182596568
+        "distance": 150,
+        "color": "#cccccc",
+        "opacity": 0.4,
+        "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 4.810236182596568,
+        "speed": 3.206824121731046,
         "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
         "attract": {
-          "enable": false,
-          "rotateX": 962.0472365193136,
+          "enable": true,
+          "rotateX": 600,
           "rotateY": 1200
         }
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": false,
