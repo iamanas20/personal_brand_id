@@ -105,15 +105,34 @@ $(document).ready(function () {
 // Slider manipulation
 
 var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
+	spaceBetween: 30,
+	effect: 'fade',
+	loop: true,
+	mousewheel: {
+		invert: false,
+	},
+	// autoHeight: true,
+	pagination: {
+		el: '.blog-slider__pagination',
+		clickable: true,
+	}
+});
+
+
+$(document).ready(function() {
+	var counter = 0;
+	var c = 0;
+	var i = setInterval(() => {
+
+		$('.progress-bar').css('width', c + '%');
+
+		counter++;
+		c++;
+		if(counter == 101){
+			clearInterval(i);
+			$('.loader-section').css('visibility', 'collapse');
+			$('body').css('overflow', 'unset');
+			$('.loaded').css('visibility', 'visible');
+		}
+	}, 35);
+})
