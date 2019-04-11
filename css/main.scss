@@ -1272,18 +1272,49 @@ body{
         padding: 170px 0;
         margin-top: -76px;
         background: $stripe-gradient;
-
+        
         .container{
             text-align: center;
+            position: relative;
             
             .logo{
                 width: 40px;
-                margin: auto;
+                margin: auto auto 30px;
 
                 img{
                     width: 100%;
                 }
             }
+
+            .moto-text{
+                font: 400 17px/1.7 $font-1;
+                color: white;
+                margin-bottom: 50px
+            }
+            
+            .social-media-container{
+                
+                > div{
+                    display: inline-block;
+
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+
+                img{
+                    width: 25px;
+                }
+            }
+            
+        }
+        .copyright{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font: 400 14px/1.7 $font-1;
+            color: white;
         }
     }
 

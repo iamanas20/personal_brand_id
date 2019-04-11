@@ -1116,13 +1116,36 @@ body {
 }
 .footer-section .container {
   text-align: center;
+  position: relative;
 }
 .footer-section .container .logo {
   width: 40px;
-  margin: auto;
+  margin: auto auto 30px;
 }
 .footer-section .container .logo img {
   width: 100%;
+}
+.footer-section .container .moto-text {
+  font: 400 17px/1.7 "Nunito", sans-serif;
+  color: white;
+  margin-bottom: 50px;
+}
+.footer-section .container .social-media-container > div {
+  display: inline-block;
+}
+.footer-section .container .social-media-container > div:not(:last-child) {
+  margin-right: 20px;
+}
+.footer-section .container .social-media-container img {
+  width: 25px;
+}
+.footer-section .copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 400 14px/1.7 "Nunito", sans-serif;
+  color: white;
 }
 
 @keyframes appear {
