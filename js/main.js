@@ -136,3 +136,19 @@ $(document).ready(function() {
 		}
 	}, 35);
 })
+
+
+var btn = $('.back-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('top-show');
+  } else {
+    btn.removeClass('top-show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});

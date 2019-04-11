@@ -84,6 +84,31 @@ body {
 
 .loaded {
   visibility: collapse;
+  position: relative;
+}
+
+.back-top {
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  background: #3625d3;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 555;
+  transition: 170ms ease-in;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.back-top img {
+  width: 100%;
+}
+
+.top-show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hero-section {
@@ -1146,6 +1171,7 @@ body {
   transform: translateX(-50%);
   font: 400 14px/1.7 "Nunito", sans-serif;
   color: white;
+  text-align: center;
 }
 
 @keyframes appear {
@@ -1157,6 +1183,11 @@ body {
   }
   100% {
     width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .more-about-me-section .black-card {
+    width: 90%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1190,6 +1221,33 @@ body {
 @media screen and (max-width: 900px) {
   .recent-work-section .work-collection-container {
     width: 80%;
+  }
+
+  .more-about-me-section {
+    width: 100%;
+    padding: 170px 0 0;
+  }
+  .more-about-me-section .black-card {
+    display: block;
+  }
+  .more-about-me-section .black-card .title {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: auto auto 30px;
+  }
+  .more-about-me-section .black-card .text-container {
+    width: 100%;
+    padding: 0;
+    margin: auto auto 50px;
+  }
+  .more-about-me-section .black-card .text-container .text {
+    text-align: center;
+  }
+  .more-about-me-section .black-card .button-container {
+    width: unset;
+    margin: auto;
+    text-align: center;
   }
 }
 @media screen and (max-width: 750px) {
