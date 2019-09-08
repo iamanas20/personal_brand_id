@@ -2,4 +2,4 @@
 This is the Anas Latique personal brand identity
 
 # Design
-![alt text](https://imgur.com/2x9wVXp)
+![Design screenshot](https://i.imgur.com/2x9wVXp.png)
